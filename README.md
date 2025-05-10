@@ -1,2 +1,5 @@
 # Euclidean-GCD-Algorithm
-This Java program efficiently calculates the Greatest Common Divisor (GCD) of two numbers using recursion, implementing the Euclidean Algorithm.
+This Java program calculates the Greatest Common Divisor (GCD) of two numbers using a recursive function based on the Euclidean Algorithm. It takes user input, processes the values recursively, and returns the GCD.
+The function follows a simple recursive approach: If n2 == 0, the function returns n1, as the base case. Otherwise, it calls itself with findGCD(n2, n1 % n2), reducing the problem step by step. This ensures efficiency, making it an optimal solution for finding GCD. The program prompts users to input two numbers, calculates their GCD using the recursive function, and displays the result. 
+The Euclidean algorithm works by repeatedly taking the remainder of the division until one number becomes zero. At that point, the remaining number is the GCD. The time complexity of this approach is O(log(min(n1, n2))), making it far more efficient than iterative subtraction-based methods. The space complexity is O(1) since it only utilizes recursive calls without storing additional data. 
+The program can be enhanced to handle negative numbers by taking Math.abs(n), ensuring correct output for all cases. 
